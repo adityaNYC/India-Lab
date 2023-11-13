@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Join the PokemonGo Team!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="style/style.css" rel="stylesheet">
+  <style>
+  </style>
+</head>
+
+<!-- rest of your HTML code remains unchanged -->
+
+</html>
+
+
+<body onload="console.log('Welcome to my home page!');">
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src=imgs/Html.png alt="Logo" width="50" height="50">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="https://pokemongolive.com/post/go-battle-league-adventures-abound/" target="_blank">PokemonGo League</a></li>
+        <li><a href="" target="_blank">NU Checker</a></li>
+        <li><a href="" target="_blank">GitHub Repo</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- MAIN BODY -->
+
+<!-- LEFT SIDE -->
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+        <h4>Social Media for PokemonGo:</h4>
+        <p>(May Require Login)</p>
+      <p><a href="https://twitter.com/PokemonGoApp?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a></p>
+      <p><a href="https://www.twitch.tv/directory/category/pokemon-go" target="_blank">Twitch.TV</a></p>
+      <p><a href="https://www.instagram.com/pokemongoapp/" target="_blank">Instagram</a></p>
+      <br>
+      <img src=imgs/logo.png alt="Logo of PokemonGo" width='150' height='150'>
+    </div>
+
+<!-- MIDDLE -->
+
+
+<!-- TEXT ABOVE FORMS // INITIALIZING FORMS -->
+    <div class="col-sm-8 text-center"> 
+      <h1>Interested in playing <b>PokemonGo</b>?</h1>
+      <p>Sign up today using the sheets below (some answers are required to submit):</p>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Tank Player</a></li>
+        <li><a data-toggle="tab" href="#menu1">DPS Player</a></li>
+        <li><a data-toggle="tab" href="#menu2">Support Player</a></li>
+      </ul>
+
+<!-- BEGIN FORMS -->
+      <div class="tab-content">
+
+        <!-- TANK PLAYER  -->
+        <div id="home" class="tab-pane fade in active">
+          <form>
+          <h3>Tank Player</h3>
+
+          <!-- Take Input From User  -->
+          <h4>Information Sheet:</h4>
+
+          <!-- QUESTION 1 -->
+          <label for="tank_characters">What is your favorite character? (Required) :</label>
+          <select name="tank_characters" id="tank_char" required>
+            <option value="">None</option>
+            <option value="Pikachu">Pikachu</option>
+            <option value="Charizard">Charizard</option>
+            <option value="MewTwo">MewTwo</option>
+            <option value="Squirtle">Squirtle</option>
+          </select>
+          <br>
+
+          <!-- QUESTION 2 -->
+          <label class="form-check-label" for="flexRadioDefault1">When is your birthday?</label>
+          <input type="date" placeholder="YYYY-MM-DD" required>
+          <br>
+
+          <!-- QUESTION 3 -->
+          <label class="form-check-label" for="flexRadioDefault1">what is your Email?</label>
+          <input type="text" placeholder="XXXX@gmail.com">
+          <br>
+
+          <!-- QUESTION 4 -->
+          <label class="form-check-label" for="flexRadioDefault1">What is your preferred character?</label>
+          <input type="text">
+          <br>
+
+          <!-- QUESTION 5 -->
+          <div class="form-box">
+            <label>Would you accept playing another role?</label>
+            <br>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">Yes</label>
+          <br />
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">No</label>  
+          </div>
+
+          <!-- QUESTION 6 -->
+          <label class="form-check-label" for="flexRadioDefault1">Any other information you want to tell us? (Max 150 characters)</label>
+          <textarea id="w3review" name="w3review" placeholder="N/A" maxlength="150"></textarea>
+          <br>
+          <input type="submit" value="Submit">
+          </form>
+        </div>
+
+
+        <!-- DPS PLAYER -->
+        <div id="menu1" class="tab-pane fade">
+          <form>
+          <h3>DPS Player</h3>
+          <h4>Information Sheet:</h4>
+
+          <!-- QUESTION 1 -->
+          <label for="dps_characters">What is your favorite character? (Required) :</label>
+          <select name="dps_characters" id="dps_char" required>
+            <option value="">None</option>
+            <option value="Snorflax">snorflax</option>
+            <option value="Vaporean">Vaporean</option>
+            <option value="Bulbasaur">Bulbasaur</option>
+            <option value="Pichu">Pichu</option>
+          </select>
+          <br>
+
+          <!-- QUESTION 2 -->
+          <label class="form-check-label" for="flexRadioDefault1">When is your birthday?</label>
+          <input type="date" placeholder="YYYY-MM-DD" required>
+          <br>
+
+          <!-- QUESTION 3 -->
+          <label class="form-check-label" for="flexRadioDefault1">What is your Email?</label>
+          <input type="text" placeholder="XXXX@gmail.com">
+          <br>
+
+          <!-- QUESTION 4 -->
+          <label class="form-check-label" for="flexRadioDefault1">What is your preferred character?</label>
+          <input type="text">
+          <br>
+
+          <!-- QUESTION 5 -->
+          <div class="form-box">
+            <label>Would you accept playing another role?</label>
+            <br>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">Yes</label>
+            <br />
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">No</label>  
+          </div>
+
+          <!-- QUESTION 6 -->
+          <label class="form-check-label" for="flexRadioDefault1">Any other information you want to tell us? (Max 150 characters)</label>
+          <textarea id="w3review" name="w3review" placeholder="N/A" maxlength="150"></textarea>
+          <br>
+          <input type="submit" value="Submit">
+          </form>
+        </div>
+
+
+        
+        <!-- SUPPORT PLAYER -->
+        <div id="menu2" class="tab-pane fade">
+          <form action="/action_page.php">
+          <h3>Support Player</h3>
+          <h4>Information Sheet:</h4>
+
+          <!-- QUESTION 1 -->
+            <label for="support_characters">What is your favorite character? (Required) :</label>
+            <select name="support_characters" id="supp_char" required>
+              <option value="">None</option>
+              <option value="Raichu">Raichu</option>
+              <option value="Gyrados">Gyrados</option>
+              <option value="Lapras">Lapras</option>
+              <option value="Droagonite">Dragonite</option>
+            </select>
+          <br>
+
+          <!-- QUESTION 2 -->
+          <label class="form-check-label" for="flexRadioDefault1">When is your birthday?</label>
+          <input type="date" placeholder="YYYY-MM-DD" required>
+          <br>
+
+          <!-- QUESTION 3 -->
+          <label class="form-check-label" for="flexRadioDefault1">What is your Email?</label>
+          <input type="text" placeholder="XXXX@gmail.com">
+          <br>
+
+          <!-- QUESTION 4 -->
+          <label class="form-check-label" for="flexRadioDefault1">What is your preferred character?</label>
+          <input type="text" required>
+          <br>
+
+          <!-- QUESTION 5 -->
+          <div class="form-box">
+            <label>Would you accept playing another role?</label>
+            <br>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">Yes</label>
+            <br />
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">No</label>  
+          </div>
+          <br>
+
+          <!-- QUESTION 6 -->
+          <label class="form-check-label" for="flexRadioDefault1">Any other information you want to tell us? (Max 150 characters)</label>
+          <textarea id="w3review" name="w3review" placeholder="N/A" maxlength="150"></textarea>
+          <br>
+          <input type="submit" value="Submit">
+          </form>
+        </div>
+
+
+
+      </div>
+      </div>
+
+<!-- RIGHT SIDE  -->
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <div class="container">
+          <img src="imgs/pikachu.png" alt="overwatch" class="image" width="150" height="50">
+          <div class="middle">
+            <div class="text">Go Pokemon!</div>
+          </div>
+        </div>
+        <p>What is Pokemon Go? Click <a href=https://pokemongolive.com/?hl=en target="_blank">here!</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<!-- FOOTER TEXT -->
+
+<footer class="container-fluid text-center">
+  <p>PokemonGo Gaming © 2050</p>
+</footer>
+
+<script src="scripts/scripts.js"></script>
+
+</body>
+</html>
